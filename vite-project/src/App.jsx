@@ -1,15 +1,16 @@
 import './App.css'
 import { useState } from 'react';
-import './components/Header/Header';
-import './components/Modal/Modal';
+import Header from './components/Header/Header';
+import Modal from './components/Modal/Modal';
+import CopyRight from './components/copyright/Copyright';
 
 function App() {
 
-  const [ hours, sethours ] = useState();
 
   return (
     <div>
       <Header />
+
     </div>
   );
 
