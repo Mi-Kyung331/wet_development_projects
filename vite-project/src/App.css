@@ -124,7 +124,7 @@ button {
 
 /* 결과 로딩 */
 .result_loading {
-  /* display: none; */
+  display: none;
   justify-content: center;
   margin-bottom: 80px;
 }
@@ -142,7 +142,7 @@ button {
 
 /* 결과 */
 .result {
-  /* display: none; */
+  display: none;
   flex-direction: column;
   align-items: center;
   line-height: 1.5;

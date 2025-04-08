@@ -13,7 +13,7 @@ function Modal() {
           <img src={licat} alt="응원하는 라이캣" />
         </div>
         <div className='btn'>
-          <button class="close_btn">종료하고 진짜 훈련하러 가기 GO!</button>
+          <button className="close_btn">종료하고 진짜 훈련하러 가기 GO!</button>
           <p>(그냥 닫기 버튼입니다.)</p>
         </div>
       </div>

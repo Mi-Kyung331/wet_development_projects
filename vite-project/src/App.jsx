@@ -1,5 +1,4 @@
-import './App.css'
-import { useState } from 'react';
+import './App.css';
 
 import clockImg from './assets/clock.png'
 import titleImg from './assets/title.png'
@@ -12,14 +11,13 @@ import Modal from './components/Modal/Modal'
 
 function App() {
 
-
   return (
     <div>
-    <section id="contents"> 
-      <div className="wrapper">
-        <div className="title">
+    <section id='contents'>
+      <div className='wrapper'>
+        <div className='title'>
           <img src={clockImg} className='clock_img' alt="" />
-          <div className="title_img">
+          <div className='title_img'>
             <img src={titleImg} alt="1만 시간의 법칙" />
           </div>
         </div>
@@ -41,49 +39,49 @@ function App() {
         </div>
       </div>
 
-      <div class="inputs">
-        <div class="field">
+      <div className="inputs">
+        <div className="field">
           <p>나는</p>
           <input type="text" id='field_value' placeholder="예) 프로그래밍" />
           <p>전문가가 될 것이다.</p>
         </div>
-        <div class="time">
+        <div className="time">
           <p>그래서 앞으로 매일 하루에</p>
-            <input type="number" id="time_value" placeholder="예) 5"></input>           
-          <p>시간씩 훈련할 것이다.</p>        
+            <input type="number" id="time_value" placeholder="예) 5"></input>
+          <p>시간씩 훈련할 것이다.</p>
         </div>
       </div>
 
-      <div class="start">
-          <div class="btn_wrap">
-            <button class="start_btn">나는 며칠 동안 훈련을 해야 1만 시간이 될까?</button>
-            <div class="click_img">
+      <div className="start">
+          <div className="btn_wrap">
+            <button className="start_btn">나는 며칠 동안 훈련을 해야 1만 시간이 될까?</button>
+            <div className="click_img">
               <img src={click} alt="" />
             </div>
           </div>
         </div>
 
-        <div class="result_loading">
-          <div class="img_wrap">
+        <div className="result_loading">
+          <div className="img_wrap">
             <img src={loading} alt="로딩 중" />
           </div>
         </div>
 
-        <div class="result">
-          <div class="result_wrap">
+        <div className="result">
+          <div className="result_wrap">
             <div>
-              당신은 <span class="field_result"></span>전문가가 되기 위해서
+              당신은 <span className="field_result"></span>전문가가 되기 위해서
             </div>
             <div>
-              대락 <span class="time_result"></span>일 이상 훈련하셔야 합니다!
+              대락 <span className="time_result"></span>일 이상 훈련하셔야 합니다!
             </div>
           </div>
-          <div class="buttons">
-            <div class="go">
-              <button class="modal_btn">훈련하러 가기 GO!GO!</button>
+          <div className="buttons">
+            <div className="go">
+              <button className="modal_btn">훈련하러 가기 GO!GO!</button>
             </div>
-            <div class="share">
-              <button class="share_btn">공유하기</button>
+            <div className="share">
+              <button className="share_btn">공유하기</button>
             </div>
           </div>
         </div>
@@ -92,6 +90,7 @@ function App() {
   <Modal />
 
   <CopyRight />
+
   </div>
 
   );

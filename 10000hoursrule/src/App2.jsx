@@ -48,40 +48,24 @@ function App() {
       backgroundColor: '#5B2386',
       color: '#FFF',
       minHeight: '100vh',
-      fontFamily: 'GmarketSansMedium',
+      fontFamily: 'GmarketSansMedium'
       }}>
      <Container maxWidth='md' sx={{ pt: 5 }}>
-
-      <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', mb: 5}}>
-        <Box sx={{
-          position: 'relative',
-          width: 265,
-          height: 265,
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center'
+      <Box sx={{ 
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        mb: 5,
         }}>
-          <img
-          src={ClockImg}
-          alt="clock"
-          width={265}
-          height={265}
-          style={{ position: 'absolute', top: 0, left: 0 }}/>
-          <Box sx={{
-            position: 'absolute',
-            top: '50%',
-            left: '50%',
-            transform: 'translate(-50%, -50%)',
-            width: 600,
-          }}>
-            <img
-            src={TitleImg}
-            alt="title"
-            style={{ width: '100%' }} />
-          </Box>
-        </Box>
+          <img src={ClockImg} alt="Clock" width={265} height={265} style={{ position: 'relative' }} />
+          <Box 
+            sx={{
+              position: 'absolute',
+              width: 564,
+            }}>
+              <img src={TitleImg} alt="Title" style={{ width: '100%' }} />
+            </Box>
       </Box>
-
       <InputForm
         field={field}
         setField={setField}
