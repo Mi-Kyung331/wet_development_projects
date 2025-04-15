@@ -2,8 +2,6 @@ import { useState } from "react";
 import {Dialog} from "@mui/material";
 import {DialogActions} from "@mui/material";
 import {DialogTitle} from "@mui/material";
-// import Button from "@mui/material/Button"; // 보험
-import { Button } from "@mui/material";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { addCar } from "../api/carapi";
 import CarDialogContent from "./CarDialogContent";
@@ -46,20 +44,20 @@ function AddCar() {
   // 자동차를 저장하고 모달 폼을 닫아야 함.
   const handleSave = () => {
     mutate(car);
-    setCar({brand:'', model:'', color:'', registrationNumber:'', 
+    setCar({brand:'', model:'', color:'', registrationNumber:'',
       modelYear: 0, price: 0 });
     handleClose();
   }
 
   return(
     <>
-      <Button onClick={handleClickOpen}> New 차량 추가</Button>
+      <button onClick={handleClickOpen}> New 차량 추가 🚗</button>
       <Dialog open={open} onClose={handleClose}>
         <DialogTitle>New Car</DialogTitle>
         <CarDialogContent car={car} handleChange={handleChange} />
         <DialogActions>
-          <Button onClick={handleClose}>취소</Button>
-          <Button onClick={handleSave}>저장</Button>
+          <button onClick={handleClose}>취소</button>
+          <button onClick={handleSave}>저장</button>
         </DialogActions>
       </Dialog>
 

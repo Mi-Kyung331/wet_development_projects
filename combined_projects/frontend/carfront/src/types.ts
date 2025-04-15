@@ -15,7 +15,7 @@ export type CarResponse = {
       href: string;
     }
   };
-}
+} 
 
 export type Car = {
   brand: string;
@@ -24,4 +24,9 @@ export type Car = {
   registrationNumber: string;
   modelYear: number;
   price: number;
+}
+
+export type CarEntry = {
+  car: Car;
+  url: string;
 }
